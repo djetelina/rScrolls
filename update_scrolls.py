@@ -12,7 +12,7 @@ import urllib2
 import cStringIO
 import json
 import sys
-import Image
+from PIL import Image
 import math
 import string
 import praw
@@ -94,7 +94,7 @@ def download_images(scrolls):  # store all image in list
     print("Done! got %s images\nStarting spritesheet" % len(scrolls))
 
 
-def upload_spritesheets(nb_spritesheets, spritesheetname, type_img):
+def upload_spritesheets(nb_spritesheets, spritesheetname, type_img, remove = False):
     print ("Starting spritesheet upload...\nConnecting to reddit")
     r = praw.Reddit(user_agent='img css uploader [praw]')
     r.login(user, password)
@@ -104,7 +104,8 @@ def upload_spritesheets(nb_spritesheets, spritesheetname, type_img):
         filename = "%s-%d.%s" % (spritesheetname, i, type_img)
         print("uploading " + filename)
         subreddit.upload_image(filename, "%s-%d" % (spritesheetname, i))
-        os.remove(filename)
+        if remove: #keep them for caching purpose
+            os.remove(filename)
     print("All done!")
 
 
@@ -122,9 +123,10 @@ def update_css(css):
     print(newcss)
     subreddit.set_stylesheet(newcss)
     print ('Done!')
+    return newcss
 
 def save_css(css):
-    with open('css.txt', 'w') as f:
+    with open('spritesheetdata.css', 'w') as f:
         f.write(css)
 
 
@@ -191,10 +193,14 @@ def load_scrolls():
 
 def main():
     try :
+        print ("Try to load data from cache")
         scrolls = load_scrolls()
         css = gen_css(spritesheetname, scrolls)
         save_css(css)
+        css = update_css(css)
+        save_css(css)
     except IOError :
+        print ("Didn't work..reload from server !")
         main_download()
 
 def main_download():
@@ -203,7 +209,8 @@ def main_download():
     save_scrolls(scrolls)
     upload_spritesheets(nb_spritesheet, spritesheetname, type_img)
     css = gen_css(spritesheetname, scrolls)
-    update_css(css)
+    css = update_css(css)
+    save_css(css)
 
 if __name__ == '__main__':
     main()
