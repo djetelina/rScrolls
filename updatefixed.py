@@ -81,7 +81,7 @@ def download_images(scrolls):  # store all image in list
     for scroll in scrolls:
         done = False
         while not done:
-            try: 
+            try:
                 scroll['image'] = Image.open(cStringIO.StringIO(getUrl(scroll['img_url'])))
                 done = True
             except IOError:
@@ -183,16 +183,19 @@ def save_scrolls(scrolls):
     scrolls_json = json.dumps(scrolls)
     with open(json_file, 'w') as f:
         f.write(scrolls_json)
- 
+
 def load_scrolls():
     with open(json_file) as f:
         scrolls_json = f.read()
     return json.loads(scrolls_json)
- 
+
 def main():
-    scrolls = load_scrolls()
-    css = gen_css(spritesheetname, scrolls)
-    save_css(css)
+    try :
+        scrolls = load_scrolls()
+        css = gen_css(spritesheetname, scrolls)
+        save_css(css)
+    except IOError :
+        main_download()
 
 def main_download():
     scrolls = get_all_scrolls()
