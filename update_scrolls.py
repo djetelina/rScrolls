@@ -12,13 +12,14 @@ import urllib2
 import cStringIO
 import json
 import sys
-import Image
+from PIL import Image
 import math
 import string
 import praw
 import os
 import time
 import htmlentity2ascii
+import cssmin
 
 if len(sys.argv) < 4:
     print("Usage : %s reddit_user reddit_pass subreddit" % sys.argv[0])
@@ -81,7 +82,7 @@ def download_images(scrolls):  # store all image in list
     for scroll in scrolls:
         done = False
         while not done:
-            try: 
+            try:
                 scroll['image'] = Image.open(cStringIO.StringIO(getUrl(scroll['img_url'])))
                 done = True
             except IOError:
@@ -94,7 +95,7 @@ def download_images(scrolls):  # store all image in list
     print("Done! got %s images\nStarting spritesheet" % len(scrolls))
 
 
-def upload_spritesheets(nb_spritesheets, spritesheetname, type_img):
+def upload_spritesheets(nb_spritesheets, spritesheetname, type_img, remove = False):
     print ("Starting spritesheet upload...\nConnecting to reddit")
     r = praw.Reddit(user_agent='img css uploader [praw]')
     r.login(user, password)
@@ -104,7 +105,8 @@ def upload_spritesheets(nb_spritesheets, spritesheetname, type_img):
         filename = "%s-%d.%s" % (spritesheetname, i, type_img)
         print("uploading " + filename)
         subreddit.upload_image(filename, "%s-%d" % (spritesheetname, i))
-        os.remove(filename)
+        if remove: #keep them for caching purpose
+            os.remove(filename)
     print("All done!")
 
 
@@ -118,29 +120,35 @@ def update_css(css):
 
     # wtf T_T why htmlentity2ascii ? idk bug without...
     cur_css = htmlentity2ascii.convert(subreddit.get_stylesheet()['stylesheet'].split(splitkey, 1)[0])
-    newcss = '%s\n%s\n%s\n' % (cur_css, splitkey, css)
-    print(newcss)
+    print('minimizing css before upload..')
+    newcss = '%s\n%s\n%s\n' % (cssmin.cssmin(cur_css, False), splitkey, cssmin.cssmin(css, False))
+    save_css(newcss)
     subreddit.set_stylesheet(newcss)
     print ('Done!')
+    return newcss
 
 def save_css(css):
-    with open('css.txt', 'w') as f:
+    with open('spritesheetdata.css', 'w') as f:
         f.write(css)
 
 
 def gen_css(spritesheetname, scrolls):
-    statichover = "font-size: 0em; height: 375px; width: 210px; z-index: 6;"
-    staticafter = " margin-left: 1px;  font-size: 0.6em; color: rgb(255,137,0);"
-    staticallrules = "{display: inline-block; cursor:default; clear: both; padding-top:5px; margin-right: 2px;}"
-    css, all_css = "", "\n"
+    statichover = ".content a[href*=\"##\"]:hover{font-size: 0em; height: 375px; width: 210px; z-index: 6;}"
+    staticafter = ".content a[href*=\"##\"]::after{content: \"[error: scrolls not found]\";margin-left: 1px;  font-size: 0.6em; color: rgb(255,137,0);}"
+    staticallrules = ".content a[href*=\"##\"]{display: inline-block; cursor:default; clear: both; padding-top:5px; margin-right: 2px;}"
+    css, all_css, all_css_hover, all_css_after = "", "\n", "", ""
     for scroll in scrolls:
         sprite_name = "%s-%d" % (spritesheetname, scroll['sprite_id'])
-        name = string.lower(scroll['name']).replace(" ", "")
-        all_css += ".content a[href=\"#" + name + "\"], "  # css rules for all scrolls
-        css += (".content a[href=\"#" + name + "\"]:hover {" + statichover + " background-image: url(%%" + sprite_name + "%%);  background-position: -"+str(scroll['pos'][0])+"px -" + str(scroll['pos'][1]) + "px; }\n")
-        css += (".content a[href=\"#" + name + "\"]::after {" + staticafter + " content: \"[" + scroll['name'] + "]\";}\n")
+        name = string.lower(scroll['name']).replace(" ", "").replace(",","")
+        #all_css += ".content a[href=\"##" + name + "\"], "  # css rules for all scrolls
+        #all_css_hover += ".content a[href=\"##" + name + "\"]:hover, "
+        #all_css_after += ".content a[href=\"##" + name + "\"]::after, "
+        css += (".content a[href=\"##" + name + "\"]:hover {background-image: url(%%" + sprite_name + "%%);  background-position: -"+str(scroll['pos'][0])+"px -" + str(scroll['pos'][1]) + "px; }\n")
+        css += (".content a[href=\"##" + name + "\"]::after {content: \"[" + scroll['name'] + "]\";}\n")
     all_css = all_css[:-2] + staticallrules
-    css += all_css
+    all_css_hover = all_css_hover[:-2] + statichover
+    all_css_after = all_css_after[:-2] + staticafter
+    css = all_css + "\n" + all_css_hover + "\n" + all_css_after + css
     return css
 
 
@@ -183,16 +191,24 @@ def save_scrolls(scrolls):
     scrolls_json = json.dumps(scrolls)
     with open(json_file, 'w') as f:
         f.write(scrolls_json)
- 
+
 def load_scrolls():
     with open(json_file) as f:
         scrolls_json = f.read()
     return json.loads(scrolls_json)
- 
+
 def main():
-    scrolls = load_scrolls()
-    css = gen_css(spritesheetname, scrolls)
-    save_css(css)
+    try :
+        print ("Try to load data from cache")
+        scrolls = load_scrolls()
+        css = gen_css(spritesheetname, scrolls)
+        print ("worked !")
+        save_css(css)
+        css = update_css(css)
+        save_css(css)
+    except IOError :
+        print ("Didn't work..reload from server !")
+        main_download()
 
 def main_download():
     scrolls = get_all_scrolls()
@@ -200,7 +216,8 @@ def main_download():
     save_scrolls(scrolls)
     upload_spritesheets(nb_spritesheet, spritesheetname, type_img)
     css = gen_css(spritesheetname, scrolls)
-    update_css(css)
+    css = update_css(css)
+    save_css(css)
 
 if __name__ == '__main__':
     main()
