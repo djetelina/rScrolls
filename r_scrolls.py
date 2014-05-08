@@ -50,13 +50,13 @@ def update_description(new_description):
 
 def streams():
     # between 1. and 2. sentinel
-
-    login()
-    old_description = get_description()
-
-    parts = old_description.split(sentinel)
-
     try:
+        login()
+        old_description = get_description()
+
+        parts = old_description.split(sentinel)
+
+    
         f = urllib2.urlopen("https://api.twitch.tv/kraken/streams?game=Scrolls&limit=10")
         twitch_api = f.read()
         f.close()
@@ -83,27 +83,27 @@ def streams():
         new_description = sentinel.join(parts)
 
         update_description(new_description)
-    except URLError, e:
-        print("Error loading streams: HTTP " + e.code)
+    except Exception as e:
+        print("Error loading streams: " + str(e))
 
 
 
 
 def ladder():
     # between 3. and 4. sentinel
+    try:
+        login()
+        old_description = get_description()
 
-    login()
-    old_description = get_description()
-
-    parts = old_description.split(sentinel)
+        parts = old_description.split(sentinel)
 
     # -------------------------------------------------------
     # edit part 3
 
     # a.scrollsguide.com doesn't like urllib, so apparently we're Google Chrome!
-    request = urllib2.Request("http://a.scrollsguide.com/ranking?limit=10&fields=name,rating,rank")
-    request.add_header("User-Agent", "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36")
-    try:
+        request = urllib2.Request("http://a.scrollsguide.com/ranking?limit=10&fields=name,rating,rank")
+        request.add_header("User-Agent", "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36")
+    
         f = urllib2.urlopen(request)
         sg_api = f.read()
         f.close()
@@ -126,8 +126,8 @@ def ladder():
         new_description = sentinel.join(parts)
 
         update_description(new_description)
-    except URLError, e:
-        print("Error loading ladder: HTTP " + e.code)
+    except Exception as e:
+        print("Error loading ladder: " + str(e))
 
 
 
