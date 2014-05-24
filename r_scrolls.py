@@ -38,12 +38,7 @@ def update_description(new_description):
     global reddit
     global subreddit_name
 
-    print(new_description)
-    print("==================================================")
-    print("==================================================")
-    print("==================================================")
-    print("==================================================")
-    print("==================================================")
+    print(time.strftime('%H:%M:%S update complete', time.localtime()))
 
     reddit.get_subreddit(subreddit_name).update_settings(description=new_description)
 
@@ -67,12 +62,14 @@ def streams():
 
         if len(res["streams"]) > 0:
             streams = "\n\n**Live streams**\n\n"
+            print("Streams LIVE:")
             for stream in res["streams"]:
                 viewers = stream["viewers"]
                 channel = stream["channel"]
                 name = channel["display_name"]
                 url  = channel["url"]
                 streams += " * [%s (%s)](%s)\n" % (name,viewers,url)
+                print("%s with %s viewers" % (name,viewers))
         else:
             streams = ""
 
