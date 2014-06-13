@@ -42,7 +42,6 @@ body:not(.res) .side .fancy-toggle-button{display:block}
 .bottom .flair{display:none}
 .flair-flair-mojang{background-image:url(%%mojanglogo%%)}
 .flair-flair-esl{background-image:url(%%flair-esl%%)}
-.flair-flair-ice{background-image:url(%%flair-ice%%)}
 .flair-flair-multi{background-image:url(%%multideckflair%%)}
 .flair-flair-growth{background-image:url(%%FlairGrowth%%)}
 .flair-flair-order{background-image:url(%%FlairOrder%%)}
@@ -52,6 +51,10 @@ body:not(.res) .side .fancy-toggle-button{display:block}
 .flair-flair-badger{background-image:url(%%flair-badger%%)}
 .flair-flair-rnb{background-image:url(%%flair-rnb%%)}
 .flair-flair-sa{background-image:url(%%flair-sa%%)}
+.flair-flair-ttt{background-image:url(%%flair-ttt%%)}
+.flair-flair-wild{background-image:url(%%flair-wild%%)}
+.flair-flair-boyz{background-image:url(%%flair-boyz%%)}
+.flair-flair-fp{background-image:url(%%flair-fp%%)}
 body{background-color:#1B1512;color:#ECEBDE}
 a.author{color:#FFA43C!important}
 .tagline .submitter{color:#4a7ac7!important}
@@ -114,7 +117,8 @@ textarea{background-color:#ECEBDE;width:100%}
 .arrow.upmod{background-position:0 -629px}
 .arrow.up{background-position:-97px -612px}
 .arrow.downmod{background-position:-81px -612px}
-.arrow.down{background-position:-65px -612px}
+.arrow.down{background-position: -65px -612px;}
+.arrow.down:hover:before{content: "This is not a disagree button. Downvote responsibly!"; display: block; margin-left: 5px; margin-top: 5px; padding: 5px; font-size: 10px; position: absolute; z-index: 1000; background-color: #69370d; color: #F2F1F1; border: 1px solid #ebbb0d;}
 .nsfw-stamp acronym{background-color:red;color:black;border:1px solid orange!important}
 .morelink{height:30px;border:none;background-color:transparent;background-image:url(%%bgsub%%);background-repeat:no-repeat;background-position:bottom center}
 .morelink .nub,.morelink:hover .nub{background-image:none;background-color:transparent}
@@ -182,6 +186,23 @@ textarea{background-color:#ECEBDE;width:100%}
 .side a[href="/smallText"]{color:grey;font-size:75%}
 .side a[href="/smallText"]:hover{cursor:default}
 .side a[href="/s"]{display:none}
+/**emo**/
+.blocks,
+a[href="/order"], a[href="/energy"], a[href="/growth"], a[href="/mix"], a[href="/decay"], a[href="/tbg"], a[href="/wild"], a[href="/rnb"], a[href="/sa"], a[href="/wnf"], a[href="/ttt"]
+{width:20px;height:20px;content:" ";background-image:url(%%emoti%%);display:inline-block;cursor:default}
+.usertext-body
+a{display:inline-block}
+a[href="/order"]{background-position:0px 0px}
+a[href="/energy"]{background-position:-20px 0px}
+a[href="/growth"]{background-position: 0px -20px}
+a[href="/mix"]{background-position:-20px -20px}
+a[href="/decay"]{background-position:-40px -0px}
+a[href="/tbg"]{background-position:-62px -0px}
+a[href="/wild"]{background-position:-0px -44px}
+a[href="/rnb"]{background-position:-40px -22px}
+a[href="/sa"]{background-position:-62px -22px}
+a[href="/wnf"]{background-position:-20px -44px}
+a[href="/ttt"]{background-position:-42px -44px}
 /**botcss**/
 .content a[href*="##"]{display:inline-block;cursor:default;clear:both;padding-top:5px;margin-right:2px}
 .content a[href*="##"]:hover{font-size:0;height:375px;width:210px;z-index:6}
