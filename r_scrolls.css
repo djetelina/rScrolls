@@ -40,21 +40,80 @@ body:not(.res) .side .fancy-toggle-button{display:block}
 .side .flairselectbtn:after{content:" - add your in game name"}
 .flairselector .customizer{display:block}
 .bottom .flair{display:none}
-.flair-flair-mojang{background-image:url(%%mojanglogo%%)}
-.flair-flair-esl{background-image:url(%%flair-esl%%)}
-.flair-flair-multi{background-image:url(%%multideckflair%%)}
-.flair-flair-growth{background-image:url(%%FlairGrowth%%)}
-.flair-flair-order{background-image:url(%%FlairOrder%%)}
-.flair-flair-energy{background-image:url(%%FlairEnergy%%)}
-.flair-flair-decay{background-image:url(%%FlairDecay%%)}
-.flair-flair-wnf{background-image:url(%%flair-wnf%%)}
-.flair-flair-badger{background-image:url(%%flair-badger%%)}
-.flair-flair-rnb{background-image:url(%%flair-rnb%%)}
-.flair-flair-sa{background-image:url(%%flair-sa%%)}
-.flair-flair-ttt{background-image:url(%%flair-ttt%%)}
-.flair-flair-wild{background-image:url(%%flair-wild%%)}
-.flair-flair-boyz{background-image:url(%%flair-boyz%%)}
-.flair-flair-fp{background-image:url(%%flair-fp%%)}
+.flair-flair-wnf,
+.flair-flair-sa,
+.flair-flair-boyz,
+.flair-flair-rnb,
+.flair-flair-badger,
+.flair-flair-ttt,
+.flair-flair-fp,
+.flair-flair-multi,
+.flair-flair-decay,
+.flair-flair-growth,
+.flair-flair-order,
+.flair-flair-energy,
+.flair-flair-wild,
+.flair-flair-mojang,
+.flair-flair-esl,
+.flair-flair-ice {
+  background: url(%%flairs%%);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: 192px 96px;
+}
+.flair-flair-wnf {
+  background-position: 0px 0px;
+}
+.flair-flair-sa {
+  background-position: -24px 0px;
+}
+.flair-flair-boyz {
+  background-position: -48px 0px;
+}
+.flair-flair-rnb {
+  background-position: -72px 0px;
+}
+.flair-flair-badger {
+  background-position: -96px 0px;
+}
+.flair-flair-ttt {
+  background-position: -120px 0px;
+}
+.flair-flair-fp {
+  background-position: -144px 0px;
+}
+/* New Line */
+.flair-flair-multi {
+  background-position: 0px -24px;
+}
+.flair-flair-decay {
+  background-position: -24px -24px;
+}
+.flair-flair-energy {
+  background-position: -48px -24px;
+}
+.flair-flair-order {
+  background-position: -72px -24px;
+}
+.flair-flair-growth {
+  background-position: -96px -24px;
+}
+.flair-flair-wild {
+  background-position: -120px -24px;
+}
+/* New Line */
+.flair-flair-esl {
+  background-position: 0px -48px;
+}
+.flair-flair-mojang {
+  background-position: -24px -48px;
+}
+/* New Line */
+.flair-flair-ice {
+  background-position: 0px -72px;
+}
+
 body{background-color:#1B1512;color:#ECEBDE}
 a.author{color:#FFA43C!important}
 .tagline .submitter{color:#4a7ac7!important}
