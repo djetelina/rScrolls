@@ -2,8 +2,8 @@
 .wiki-page .pageactions{border-radius:0;border:1px solid #EBBB0D}
 .content a,.commentarea a:visited,.comment .md p>a{color:#FFF}
 .wiki-page .wiki-page-content .md.wiki h1,.wiki-page .wiki-page-content .md.wiki h2,.wiki-page .wiki-page-content .md.wiki h3{color:#FFA43C}
-.subscribers span.number:after{content:" readers"}
-.users-online .word::after{font-size:small;content:"online now"}
+.subscribers span.number:after{content:" puddings"}
+.users-online .word::after{font-size:small;content:"wild"}
 .comment a[href*="youtube.com"],.comment a[href*="youtu.be"],.self a[href*="youtube.com"],.self a[href*="youtu.be"]{padding-left:20px;background:url(%%youtube%%) no-repeat scroll left top transparent}
 .RESshortcutside{display:none!important}
 .RES-keyNav-activeElement,.commentarea .RES-keyNav-activeElement .md,.commentarea .RES-keyNav-activeElement.entry .noncollapsed{background-color:transparent!important;outline:medium none!important}
@@ -55,9 +55,10 @@ body:not(.res) .side .fancy-toggle-button{display:block}
 .flair-flair-wild,
 .flair-flair-mojang,
 .flair-flair-esl,
-.flair-flair-ice {
+.flair-flair-ice,
+.flair-flair-was,
+.flair-flair-oee {
   background: url(%%flairs%%);
-  width: 24px;
   height: 24px;
   display: inline-block;
   background-size: 192px 96px;
@@ -82,6 +83,9 @@ body:not(.res) .side .fancy-toggle-button{display:block}
 }
 .flair-flair-fp {
   background-position: -144px 0px;
+}
+.flair-flair-was {
+  background-position: -168px 0px;
 }
 /* New Line */
 .flair-flair-multi {
@@ -112,6 +116,9 @@ body:not(.res) .side .fancy-toggle-button{display:block}
 /* New Line */
 .flair-flair-ice {
   background-position: 0px -72px;
+}
+.flair-flair-oee {
+  background-position: -24px -72px;
 }
 
 body{background-color:#1B1512;color:#ECEBDE}
