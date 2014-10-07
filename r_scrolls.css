@@ -270,7 +270,7 @@ a[href="/sa"]{background-position:-62px -22px}
 a[href="/wnf"]{background-position:-20px -44px}
 a[href="/ttt"]{background-position:-42px -44px}
 /**botcss**/
-.content a[href*="##"]{display:inline-block;cursor:default;clear:both;padding-top:5px;margin-right:2px}
+.content a[href*="##"]{position:absolute;display:inline-block;cursor:default;clear:both;padding-top:5px;margin-right:2px}
 .content a[href*="##"]:hover{font-size:0;height:375px;width:210px;z-index:6}
 .content a[href*="##"]::after{content:"[error:scrolls not found]";margin-left:1px;font-size:.6em;color:#ff8900}
 .content a[href="##gravelockelder"]:hover{background-image:url(%%spritesheet-0%%);background-position:-0px -0px}
