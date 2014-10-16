@@ -1,46 +1,190 @@
-.report-form { color: black; }
-.wiki-page .pageactions .wikiaction-current,.wiki-page .pageactions .wikiaction:hover,.wiki-page .pageactions .wikiaction-current:hover{background-color:#69370D;color:#FFF}
-.wiki-page .pageactions{border-radius:0;border:1px solid #EBBB0D}
-.content a,.commentarea a:visited,.comment .md p>a{color:#FFF}
-.wiki-page .wiki-page-content .md.wiki h1,.wiki-page .wiki-page-content .md.wiki h2,.wiki-page .wiki-page-content .md.wiki h3{color:#FFA43C}
-.subscribers span.number:after{content:" puddings"}
-.users-online .word::after{font-size:small;content:"wild"}
-.comment a[href*="youtube.com"],.comment a[href*="youtu.be"],.self a[href*="youtube.com"],.self a[href*="youtu.be"]{padding-left:20px;background:url(%%youtube%%) no-repeat scroll left top transparent}
-.RESshortcutside{display:none!important}
-.RES-keyNav-activeElement,.commentarea .RES-keyNav-activeElement .md,.commentarea .RES-keyNav-activeElement.entry .noncollapsed{background-color:transparent!important;outline:medium none!important}
-html:not([lang="dd"]) .RES-keyNav-activeElement{background-color:transparent!important}
-.RES-keyNav-activeElement{background:transparent!important;outline:medium none!important}
-.res .commentarea .RES-keyNav-activeElement .md,.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed{background:transparent!important}
-.keyHighlight{outline:1px dashed #FFA43C!important;background-color:transparent!important}
-.thing.spam{background-color:#690d16}
-.big-mod-buttons{color:black}
-.entry{padding:2px}
-.entry .buttons li.trial-stamp,.entry .buttons li.reported-stamp{color:black}
-.nextprev{padding:5px}
-.nextprev a,.nextprev a:hover{border:1px solid #EBBB0D;background-color:#69370D}
-.nextprev{color:#ECEBDE}
-.link .score.dislikes{color:#ede7aa}
-.titlebox .redditname{}
-.styleToggle{margin-bottom:5px!important}
-.fancy-toggle-button .add{font-size:100%;color:#ECEBDE!important;border:1px solid #ebbb0d!important;background-color:#0d6932;background-image:none!important}
-.fancy-toggle-button .remove{text-align:center;font-size:100%;color:#ECEBDE!important;border:1px solid #ebbb0d!important;background-color:#690d0d;background-image:none!important}
-.titlebox .fancy-toggle-button{display:block;margin:0 auto 0 auto!important;background-color:transparent}
-.subscribers{position:relative;left:-20px}
-.users-online{display:inline;position:relative;left:-20px}
-.subscribers span.word{display:none}
-.users-online::before{background-image:none}
-.users-online .number::before{content:'| '}
-.users-online .word{font-size:0;content:''}
-body:not(.res) .side .fancy-toggle-button{display:block}
-.comment .userattrs{}
-.tagline>.flair{}
-.linkflair-flair-weekly .linkflairlabel{background:transparent;border:none;color:#E92B2F;margin-right:5px;font-size:15px;padding:0;display:inline}
-.flair{vertical-align:middle;color:#ECEBDE;border:none;overflow:hidden;text-indent:-9000px;bottom:-6px;width:20px;height:20px;background-color:transparent;background-repeat:no-repeat;display:inline-block}
-.flair:hover{background-image:none;background-color:white;border:1px solid orange;bottom:0;color:black;height:18px;overflow:hidden;position:relative;text-align:right;text-indent:0;line-height:18px;vertical-align:middle;display:inline-block;width:auto;padding:0 5px}
-.userattrs{content:" "}
-.side .flairselectbtn:after{content:" - add your in game name"}
-.flairselector .customizer{display:block}
-.bottom .flair{display:none}
+.report-form {
+    color: black;
+}
+.wiki-page .pageactions .wikiaction-current,
+.wiki-page .pageactions .wikiaction:hover,
+.wiki-page .pageactions .wikiaction-current:hover {
+    background-color: #69370D;
+    color: #FFF
+}
+.wiki-page .pageactions {
+    border-radius: 0;
+    border: 1px solid #EBBB0D
+}
+.content a,
+.commentarea a:visited,
+.comment .md p>a {
+    color: #FFF
+}
+.wiki-page .wiki-page-content .md.wiki h1,
+.wiki-page .wiki-page-content .md.wiki h2,
+.wiki-page .wiki-page-content .md.wiki h3 {
+    color: #FFA43C
+}
+.subscribers span.number:after {
+    content: " puddings"
+}
+.users-online .word::after {
+    font-size: small;
+    content: "wild"
+}
+.comment a[href*="youtube.com"],
+.comment a[href*="youtu.be"],
+.self a[href*="youtube.com"],
+.self a[href*="youtu.be"] {
+    padding-left: 20px;
+    background: url(%%youtube%%) no-repeat scroll left top transparent
+}
+.RESshortcutside {
+    display: none!important
+}
+.RES-keyNav-activeElement,
+.commentarea .RES-keyNav-activeElement .md,
+.commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    background-color: transparent!important;
+    outline: medium none!important
+}
+html:not([lang="dd"]) .RES-keyNav-activeElement {
+    background-color: transparent!important
+}
+.RES-keyNav-activeElement {
+    background: transparent!important;
+    outline: medium none!important
+}
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    background: transparent!important
+}
+.keyHighlight {
+    outline: 1px dashed #FFA43C!important;
+    background-color: transparent!important
+}
+.thing.spam {
+    background-color: #690d16
+}
+.big-mod-buttons {
+    color: black
+}
+.entry {
+    padding: 2px
+}
+.entry .buttons li.trial-stamp,
+.entry .buttons li.reported-stamp {
+    color: black
+}
+.nextprev {
+    padding: 5px
+}
+.nextprev a,
+.nextprev a:hover {
+    border: 1px solid #EBBB0D;
+    background-color: #69370D
+}
+.nextprev {
+    color: #ECEBDE
+}
+.link .score.dislikes {
+    color: #ede7aa
+}
+.titlebox .redditname {} .styleToggle {
+    margin-bottom: 5px!important
+}
+.fancy-toggle-button .add {
+    font-size: 100%;
+    color: #ECEBDE!important;
+    border: 1px solid #ebbb0d!important;
+    background-color: #0d6932;
+    background-image: none!important
+}
+.fancy-toggle-button .remove {
+    text-align: center;
+    font-size: 100%;
+    color: #ECEBDE!important;
+    border: 1px solid #ebbb0d!important;
+    background-color: #690d0d;
+    background-image: none!important
+}
+.titlebox .fancy-toggle-button {
+    display: block;
+    margin: 0 auto 0 auto!important;
+    background-color: transparent
+}
+.subscribers {
+    position: relative;
+    left: -20px
+}
+.users-online {
+    display: inline;
+    position: relative;
+    left: -20px
+}
+.subscribers span.word {
+    display: none
+}
+.users-online::before {
+    background-image: none
+}
+.users-online .number::before {
+    content: '| '
+}
+.users-online .word {
+    font-size: 0;
+    content: ''
+}
+body:not(.res) .side .fancy-toggle-button {
+    display: block
+}
+.comment .userattrs {} .tagline>.flair {} .linkflair-flair-weekly .linkflairlabel {
+    background: transparent;
+    border: none;
+    color: #E92B2F;
+    margin-right: 5px;
+    font-size: 15px;
+    padding: 0;
+    display: inline
+}
+.flair {
+    vertical-align: middle;
+    color: #ECEBDE;
+    border: none;
+    overflow: hidden;
+    text-indent: -9000px;
+    bottom: -6px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    display: inline-block
+}
+.flair:hover {
+    background-image: none;
+    background-color: white;
+    border: 1px solid orange;
+    bottom: 0;
+    color: black;
+    height: 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: right;
+    text-indent: 0;
+    line-height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    width: auto;
+    padding: 0 5px
+}
+.userattrs {
+    content: " "
+}
+.side .flairselectbtn:after {
+    content: " - add your in game name"
+}
+.flairselector .customizer {
+    display: block
+}
+.bottom .flair {
+    display: none
+}
 .flair-flair-wnf,
 .flair-flair-sa,
 .flair-flair-boyz,
@@ -59,214 +203,666 @@ body:not(.res) .side .fancy-toggle-button{display:block}
 .flair-flair-ice,
 .flair-flair-was,
 .flair-flair-oee {
-  background: url(%%flairs%%);
-  height: 24px;
-  display: inline-block;
-  background-size: 192px 96px;
+    background: url(%%flairs%%);
+    height: 24px;
+    display: inline-block;
+    background-size: 192px 96px;
 }
 .flair-flair-wnf {
-  background-position: 0px 0px;
+    background-position: 0px 0px;
 }
 .flair-flair-sa {
-  background-position: -24px 0px;
+    background-position: -24px 0px;
 }
 .flair-flair-boyz {
-  background-position: -48px 0px;
+    background-position: -48px 0px;
 }
 .flair-flair-rnb {
-  background-position: -72px 0px;
+    background-position: -72px 0px;
 }
 .flair-flair-badger {
-  background-position: -96px 0px;
+    background-position: -96px 0px;
 }
 .flair-flair-ttt {
-  background-position: -120px 0px;
+    background-position: -120px 0px;
 }
 .flair-flair-fp {
-  background-position: -144px 0px;
+    background-position: -144px 0px;
 }
 .flair-flair-was {
-  background-position: -168px 0px;
+    background-position: -168px 0px;
 }
 /* New Line */
+
 .flair-flair-multi {
-  background-position: 0px -24px;
+    background-position: 0px -24px;
 }
 .flair-flair-decay {
-  background-position: -24px -24px;
+    background-position: -24px -24px;
 }
 .flair-flair-energy {
-  background-position: -48px -24px;
+    background-position: -48px -24px;
 }
 .flair-flair-order {
-  background-position: -72px -24px;
+    background-position: -72px -24px;
 }
 .flair-flair-growth {
-  background-position: -96px -24px;
+    background-position: -96px -24px;
 }
 .flair-flair-wild {
-  background-position: -120px -24px;
+    background-position: -120px -24px;
 }
 /* New Line */
+
 .flair-flair-esl {
-  background-position: 0px -48px;
+    background-position: 0px -48px;
 }
 .flair-flair-mojang {
-  background-position: -24px -48px;
+    background-position: -24px -48px;
 }
 /* New Line */
+
 .flair-flair-ice {
-  background-position: 0px -72px;
+    background-position: 0px -72px;
 }
 .flair-flair-oee {
-  background-position: -24px -72px;
+    background-position: -24px -72px;
 }
-
-body{background-color:#1B1512;color:#ECEBDE}
-a.author{color:#FFA43C!important}
-.tagline .submitter{color:#4a7ac7!important}
-.tagline .moderator,.green{color:#17c917!important}
-.content a,.commentarea a:visited,.comment .md p>a{color:#FFA43C}
-.content a:visited,.commentarea .comment .md p>a:visited{color:#925208}
-.infobar{margin:5px!important;color:black}
-textarea{background-color:#ECEBDE;width:100%}
-.expando-button{background-color:transparent}
-#header{border-bottom:1px solid #FFA43C}
-#header-bottom-left{background-image:url(%%bg-head%%);background-repeat:no-repeat;background-color:#1b1612;background-position:center center}
-.content.submit .info-notice{color:black}
-#header .pagename,#header .redditname{font-size:0;text-indent:-99999px;background-image:url(%%logo%%);background-repeat:no-repeat;display:block;margin:0 auto 0 auto;width:256px;height:99px}
-#header .pagename,#header .redditname a{text-indent:-99999px;display:block;margin:0 auto;width:256px;height:100px}
-#header .redditname:hover{background-image:url(%%logohover%%)}
-#header-bottom-left .tabmenu{position:absolute;bottom:0}
-#header-img-a{position:absolute;top:18px;display:block;width:118px;height:82%;background-image:url(%%logo-reddit%%);background-repeat:no-repeat}
-#header-img-a:hover{background-image:url(%%logo-reddit-over%%);background-repeat:no-repeat}
-#header-img{display:none}
-#header-bottom-right{position:absolute;top:auto!important;bottom:0!important;border-top:1px solid #ebbb0d;border-left:1px solid #ebbb0d;border-right:1px solid #ebbb0d;background-color:#69370d}
-#header-bottom-right .separator,#header-bottom-right .user{color:#ebbb0d}
-#header-bottom-right a{color:#fff}
-#userbarToggle{display:none!important}
-.tabmenu li{padding:2px 0 0 1px;border:1px solid #ebbb0d;background-color:#69370d}
-.tabmenu li a{color:#fff;background-color:#69370d}
-.tabmenu li.selected a{border:none;color:#f46400;background-color:#69370d}
-.tabmenu.formtab li{margin-left:5px}
-.tabmenu.formtab a{border:none}
-.tabmenu.formtab .selected a{font-size:100%;color:#F46400;background-color:transparent}
-.formtabs-content{border:none}
-.formtabs-content .infobar{color:black}
-.roundfield,.linefield{color:#ECEBDE;border:1px dotted #FFA43C;background-color:#29201a}
-.linefield .title{color:#FFC250}
-.pagename a,.redditname,.titlebox h1 a{color:#FFC250}
-.content{background-color:#251d1a;position:relative;margin-right:320px}
-.side{width:300px;color:#8A6648;background-color:#1B1512}
-.side h1{color:#FFA43C}
-.linkinfo{color:#ECEBDE;border:1px dotted #FFA43C;background-color:#29201a}
-.titlebox strong{text-align:center;line-height:30px;display:block;height:30px;border:none;background-color:transparent;background-image:url(%%bgsub%%);background-repeat:no-repeat;background-position:bottom center}
-#search input{background-color:#ECEBDE}
-.titlebox form.toggle,.leavemoderator{color:#ECEBDE;background-color:transparent}
-.titlebox{color:#ECEBDE;background-color:transparent}
-.sidecontentbox .content{color:#ECEBDE;border:1px dotted #FFA43C;background-color:#29201a}
-.sidebox .spacer{color:#ECEBDE;border:1px dotted #FFA43C;background-color:#29201a}
-.login-form-side{color:#ECEBDE;border:1px dotted #FFA43C;background-color:#29201a}
-.sidebox .subtitle{color:#ECEBDE}
-.icon-menu a{background-color:transparent}
-.sidecontentbox .title h1{color:#FFA43C}
-.tagline a{color:#FFA43C}
-.titlebox .bottom{color:#ECEBDE}
-.thumbnail{border:1px solid #2E2C2A;border-radius:5px;display:none}
-.thumbnail.nsfw{border:none;height:50px}
-.thumbnail.default,.thumbnail.nsfw{border:none;background-position:center;background-image:url(%%EnergyBG%%)!important}
-.arrow{border:none;background-image:url(%%rscrollssprite%%)!important}
-.thumbnail.self{border:none;background-position:center;background-image:url(%%GrowthBG%%)!important}
-.expando-button.selftext.expanded:hover,.expando-button.selftext.expanded,.expando-button.selftext.collapsed{background-position:0 0!important;background-image:url(%%expandtxt%%)!important}
-.expando-button.video.collapsed:hover,.expando-button.video.collapsed,.expando-button.video.expanded{background-position:0 0!important;background-image:url(%%expandvid%%)!important}
-.expando-button.image{background-position:0 0!important;background-image:url(%%expandimg%%)!important}
-.expando-button{}
-.arrow.upmod{background-position:0 -629px}
-.arrow.up{background-position:-97px -612px}
-.arrow.downmod{background-position:-81px -612px}
-.arrow.down{background-position: -65px -612px;}
-.arrow.down:hover:before{content: "This is not a disagree button. Downvote responsibly!"; display: block; margin-left: 5px; margin-top: 5px; padding: 5px; font-size: 10px; position: absolute; z-index: 1000; background-color: #69370d; color: #F2F1F1; border: 1px solid #ebbb0d;}
-.nsfw-stamp acronym{background-color:red;color:black;border:1px solid orange!important}
-.morelink{height:30px;border:none;background-color:transparent;background-image:url(%%bgsub%%);background-repeat:no-repeat;background-position:bottom center}
-.morelink .nub,.morelink:hover .nub{background-image:none;background-color:transparent}
-.morelink:hover{height:30px;border:none;background-color:transparent;background-image:url(%%bgsub%%);background-repeat:no-repeat;background-position:bottom center}
-.morelink a{color:#ff8900}
-.thing .title.loggedin:visited,.thing .title:visited{color:#925208!important}
-.thing .title.loggedin.click,.thing .title.click,.thing .title.loggedin.click:visited{color:#925208!important}
-.thing .title.loggedin,.thing .title{color:#FFA43C}
-.link .usertext .md{color:#ECEBDE;border:1px dotted #FFA43C;background-color:#29201a}
-.usertext.border .usertext-body{background-color:transparent;border:1px dashed #FFA43C;margin-top:9px;padding:2px}
-.panestack-title{border:none}
-.commentarea{padding-bottom:5px}
-.menuarea{overflow:hidden}
-.commentarea .menuarea{width:100%;left:-11px;padding-bottom:5px;border-bottom:5px solid #1B1512}
-.commentarea .spacer{padding-left:6px}
-.link.last-clicked{border:none}
-.RESSubscriptionButton,.RESSubscriptionButton:hover{color:white!important;background-color:#69370d!important;border:1px solid #ebbb0d!important}
-.res:not(.res-nightmode) .commentarea .comment{background-color:#29201a!important}
-.res:not(.res-nightmode) .commentarea .comment .comment{background-color:#221a15!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment{background-color:#29201a!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment{background-color:#221a15!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.res-nightmode .commentarea .comment{background-color:#29201a!important}
-.res-nightmode .commentarea .comment .comment{background-color:#221a15!important}
-.res-nightmode .commentarea .comment .comment .comment{background-color:#29201a!important}
-.res-nightmode .commentarea .comment .comment .comment .comment{background-color:#221a15!important}
-.res-nightmode .commentarea .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.comments-page .comment{background-color:#29201a!important}
-.comments-page .comment .comment{background-color:#221a15!important}
-.comments-page .comment .comment .comment{background-color:#29201a!important}
-.comments-page .comment .comment .comment .comment{background-color:#221a15!important}
-.comments-page .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.comments-page .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.comments-page .comment .comment .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.comments-page .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#29201a!important}
-.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#221a15!important}
-.res:not(.res-nightmode) .commentarea .comment{border:1px solid #2e2c2a!important}
-.comment .child{border:none}
-.comment{padding:2px;margin:2px}
-.comments-page .comment{border:1px solid #2e2c2a!important}
-.new-comment .usertext-body{margin-top:9px;padding:2px;background-color:transparent;border:1px dashed #FFA43C}
-.author.submitter{padding:2px!important}
-.footer{border:1px solid #2e2c2a}
-.footer .col{border-left:1px solid #2e2c2a}
-.flat-vert.title{color:#FFC250}
-.link{border-bottom:5px solid #1B1512}
-.markhelp{color:#ECEBDE!important;border:1px dotted #FFA43C!important;background-color:#29201a!important}
-.markhelp tr{color:#ECEBDE!important;border:1px dotted #FFA43C!important;background-color:#29201a!important}
-.titlebox .usertext-body .md h4 a{color:white;opacity:1}
-.titlebox .usertext-body .md h4{left:124px;background-color:#69370D;border:1px dotted #EBBB0D;border-radius:3px;box-shadow:0 0 10px #111;color:#FF8900;display:block;font-size:100%;font-weight:normal;line-height:20px;opacity:.9;padding:4px;position:absolute;z-index:500}
-.titlebox .usertext-body .md h4:hover{opacity:1}
-.titlebox .usertext-body .md h4:nth-of-type(1){top:25px}
-.titlebox .usertext-body .md h4:nth-of-type(2){top:61px}
-.side a[href="/smallText"]{color:grey;font-size:75%}
-.side a[href="/smallText"]:hover{cursor:default}
-.side a[href="/s"]{display:none}
+body {
+    background-color: #1B1512;
+    color: #ECEBDE
+}
+a.author {
+    color: #FFA43C!important
+}
+.tagline .submitter {
+    color: #4a7ac7!important
+}
+.tagline .moderator,
+.green {
+    color: #17c917!important
+}
+.content a,
+.commentarea a:visited,
+.comment .md p>a {
+    color: #FFA43C
+}
+.content a:visited,
+.commentarea .comment .md p>a:visited {
+    color: #925208
+}
+.infobar {
+    margin: 5px!important;
+    color: black
+}
+textarea {
+    background-color: #ECEBDE;
+    width: 100%
+}
+.expando-button {
+    background-color: transparent
+}
+#header {
+    border-bottom: 1px solid #FFA43C
+}
+#header-bottom-left {
+    background-image: url(%%bg-head%%);
+    background-repeat: no-repeat;
+    background-color: #1b1612;
+    background-position: center center
+}
+.content.submit .info-notice {
+    color: black
+}
+#header .pagename,
+#header .redditname {
+    font-size: 0;
+    text-indent: -99999px;
+    background-image: url(%%logo%%);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 256px;
+    height: 99px
+}
+#header .pagename,
+#header .redditname a {
+    text-indent: -99999px;
+    display: block;
+    margin: 0 auto;
+    width: 256px;
+    height: 100px
+}
+#header .redditname:hover {
+    background-image: url(%%logohover%%)
+}
+#header-bottom-left .tabmenu {
+    position: absolute;
+    bottom: 0
+}
+#header-img-a {
+    position: absolute;
+    top: 18px;
+    display: block;
+    width: 118px;
+    height: 82%;
+    background-image: url(%%logo-reddit%%);
+    background-repeat: no-repeat
+}
+#header-img-a:hover {
+    background-image: url(%%logo-reddit-over%%);
+    background-repeat: no-repeat
+}
+#header-img {
+    display: none
+}
+#header-bottom-right {
+    position: absolute;
+    top: auto!important;
+    bottom: 0!important;
+    border-top: 1px solid #ebbb0d;
+    border-left: 1px solid #ebbb0d;
+    border-right: 1px solid #ebbb0d;
+    background-color: #69370d
+}
+#header-bottom-right .separator,
+#header-bottom-right .user {
+    color: #ebbb0d
+}
+#header-bottom-right a {
+    color: #fff
+}
+#userbarToggle {
+    display: none!important
+}
+.tabmenu li {
+    padding: 2px 0 0 1px;
+    border: 1px solid #ebbb0d;
+    background-color: #69370d
+}
+.tabmenu li a {
+    color: #fff;
+    background-color: #69370d
+}
+.tabmenu li.selected a {
+    border: none;
+    color: #f46400;
+    background-color: #69370d
+}
+.tabmenu.formtab li {
+    margin-left: 5px
+}
+.tabmenu.formtab a {
+    border: none
+}
+.tabmenu.formtab .selected a {
+    font-size: 100%;
+    color: #F46400;
+    background-color: transparent
+}
+.formtabs-content {
+    border: none
+}
+.formtabs-content .infobar {
+    color: black
+}
+.roundfield,
+.linefield {
+    color: #ECEBDE;
+    border: 1px dotted #FFA43C;
+    background-color: #29201a
+}
+.linefield .title {
+    color: #FFC250
+}
+.pagename a,
+.redditname,
+.titlebox h1 a {
+    color: #FFC250
+}
+.content {
+    background-color: #251d1a;
+    position: relative;
+    margin-right: 320px
+}
+.side {
+    width: 300px;
+    color: #8A6648;
+    background-color: #1B1512
+}
+.side h1 {
+    color: #FFA43C
+}
+.linkinfo {
+    color: #ECEBDE;
+    border: 1px dotted #FFA43C;
+    background-color: #29201a
+}
+.titlebox strong {
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    background-image: url(%%bgsub%%);
+    background-repeat: no-repeat;
+    background-position: bottom center
+}
+#search input {
+    background-color: #ECEBDE
+}
+.titlebox form.toggle,
+.leavemoderator {
+    color: #ECEBDE;
+    background-color: transparent
+}
+.titlebox {
+    color: #ECEBDE;
+    background-color: transparent
+}
+.sidecontentbox .content {
+    color: #ECEBDE;
+    border: 1px dotted #FFA43C;
+    background-color: #29201a
+}
+.sidebox .spacer {
+    color: #ECEBDE;
+    border: 1px dotted #FFA43C;
+    background-color: #29201a
+}
+.login-form-side {
+    color: #ECEBDE;
+    border: 1px dotted #FFA43C;
+    background-color: #29201a
+}
+.sidebox .subtitle {
+    color: #ECEBDE
+}
+.icon-menu a {
+    background-color: transparent
+}
+.sidecontentbox .title h1 {
+    color: #FFA43C
+}
+.tagline a {
+    color: #FFA43C
+}
+.titlebox .bottom {
+    color: #ECEBDE
+}
+.thumbnail {
+    border: 1px solid #2E2C2A;
+    border-radius: 5px;
+    display: none
+}
+.thumbnail.nsfw {
+    border: none;
+    height: 50px
+}
+.thumbnail.default,
+.thumbnail.nsfw {
+    border: none;
+    background-position: center;
+    background-image: url(%%EnergyBG%%)!important
+}
+.arrow {
+    border: none;
+    background-image: url(%%rscrollssprite%%)!important
+}
+.thumbnail.self {
+    border: none;
+    background-position: center;
+    background-image: url(%%GrowthBG%%)!important
+}
+.expando-button.selftext.expanded:hover,
+.expando-button.selftext.expanded,
+.expando-button.selftext.collapsed {
+    background-position: 0 0!important;
+    background-image: url(%%expandtxt%%)!important
+}
+.expando-button.video.collapsed:hover,
+.expando-button.video.collapsed,
+.expando-button.video.expanded {
+    background-position: 0 0!important;
+    background-image: url(%%expandvid%%)!important
+}
+.expando-button.image {
+    background-position: 0 0!important;
+    background-image: url(%%expandimg%%)!important
+}
+.expando-button {} .arrow.upmod {
+    background-position: 0 -629px
+}
+.arrow.up {
+    background-position: -97px -612px
+}
+.arrow.downmod {
+    background-position: -81px -612px
+}
+.arrow.down {
+    background-position: -65px -612px;
+}
+.arrow.down:hover:before {
+    content: "This is not a disagree button. Downvote responsibly!";
+    display: block;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 10px;
+    position: absolute;
+    z-index: 1000;
+    background-color: #69370d;
+    color: #F2F1F1;
+    border: 1px solid #ebbb0d;
+}
+.nsfw-stamp acronym {
+    background-color: red;
+    color: black;
+    border: 1px solid orange!important
+}
+.morelink {
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    background-image: url(%%bgsub%%);
+    background-repeat: no-repeat;
+    background-position: bottom center
+}
+.morelink .nub,
+.morelink:hover .nub {
+    background-image: none;
+    background-color: transparent
+}
+.morelink:hover {
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    background-image: url(%%bgsub%%);
+    background-repeat: no-repeat;
+    background-position: bottom center
+}
+.morelink a {
+    color: #ff8900
+}
+.thing .title.loggedin:visited,
+.thing .title:visited {
+    color: #925208!important
+}
+.thing .title.loggedin.click,
+.thing .title.click,
+.thing .title.loggedin.click:visited {
+    color: #925208!important
+}
+.thing .title.loggedin,
+.thing .title {
+    color: #FFA43C
+}
+.link .usertext .md {
+    color: #ECEBDE;
+    border: 1px dotted #FFA43C;
+    background-color: #29201a
+}
+.usertext.border .usertext-body {
+    background-color: transparent;
+    border: 1px dashed #FFA43C;
+    margin-top: 9px;
+    padding: 2px
+}
+.panestack-title {
+    border: none
+}
+.commentarea {
+    padding-bottom: 5px
+}
+.menuarea {
+    overflow: hidden
+}
+.commentarea .menuarea {
+    width: 100%;
+    left: -11px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #1B1512
+}
+.commentarea .spacer {
+    padding-left: 6px
+}
+.link.last-clicked {
+    border: none
+}
+.RESSubscriptionButton,
+.RESSubscriptionButton:hover {
+    color: white!important;
+    background-color: #69370d!important;
+    border: 1px solid #ebbb0d!important
+}
+.res:not(.res-nightmode) .commentarea .comment {
+    background-color: #29201a!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment {
+    background-color: #221a15!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res-nightmode .commentarea .comment {
+    background-color: #29201a!important
+}
+.res-nightmode .commentarea .comment .comment {
+    background-color: #221a15!important
+}
+.res-nightmode .commentarea .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res-nightmode .commentarea .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.comments-page .comment {
+    background-color: #29201a!important
+}
+.comments-page .comment .comment {
+    background-color: #221a15!important
+}
+.comments-page .comment .comment .comment {
+    background-color: #29201a!important
+}
+.comments-page .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.comments-page .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.comments-page .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.comments-page .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #29201a!important
+}
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #221a15!important
+}
+.res:not(.res-nightmode) .commentarea .comment {
+    border: 1px solid #2e2c2a!important
+}
+.comment .child {
+    border: none
+}
+.comment {
+    padding: 2px;
+    margin: 2px
+}
+.comments-page .comment {
+    border: 1px solid #2e2c2a!important
+}
+.new-comment .usertext-body {
+    margin-top: 9px;
+    padding: 2px;
+    background-color: transparent;
+    border: 1px dashed #FFA43C
+}
+.author.submitter {
+    padding: 2px!important
+}
+.footer {
+    border: 1px solid #2e2c2a
+}
+.footer .col {
+    border-left: 1px solid #2e2c2a
+}
+.flat-vert.title {
+    color: #FFC250
+}
+.link {
+    border-bottom: 5px solid #1B1512
+}
+.markhelp {
+    color: #ECEBDE!important;
+    border: 1px dotted #FFA43C!important;
+    background-color: #29201a!important
+}
+.markhelp tr {
+    color: #ECEBDE!important;
+    border: 1px dotted #FFA43C!important;
+    background-color: #29201a!important
+}
+.titlebox .usertext-body .md h4 a {
+    color: white;
+    opacity: 1
+}
+.titlebox .usertext-body .md h4 {
+    left: 124px;
+    background-color: #69370D;
+    border: 1px dotted #EBBB0D;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #111;
+    color: #FF8900;
+    display: block;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 20px;
+    opacity: .9;
+    padding: 4px;
+    position: absolute;
+    z-index: 500
+}
+.titlebox .usertext-body .md h4:hover {
+    opacity: 1
+}
+.titlebox .usertext-body .md h4:nth-of-type(1) {
+    top: 25px
+}
+.titlebox .usertext-body .md h4:nth-of-type(2) {
+    top: 61px
+}
+.side a[href="/smallText"] {
+    color: grey;
+    font-size: 75%
+}
+.side a[href="/smallText"]:hover {
+    cursor: default
+}
+.side a[href="/s"] {
+    display: none
+}
 /**emo**/
+
 .blocks,
-a[href="/order"], a[href="/energy"], a[href="/growth"], a[href="/mix"], a[href="/decay"], a[href="/tbg"], a[href="/wild"], a[href="/rnb"], a[href="/sa"], a[href="/wnf"], a[href="/ttt"]
-{width:20px;height:20px;content:" ";background-image:url(%%emoti%%);display:inline-block;cursor:default}
-.usertext-body
-a{display:inline-block}
-a[href="/order"]{background-position:0px 0px}
-a[href="/energy"]{background-position:-20px 0px}
-a[href="/growth"]{background-position: 0px -20px}
-a[href="/mix"]{background-position:-20px -20px}
-a[href="/decay"]{background-position:-40px -0px}
-a[href="/tbg"]{background-position:-62px -0px}
-a[href="/wild"]{background-position:-0px -44px}
-a[href="/rnb"]{background-position:-40px -22px}
-a[href="/sa"]{background-position:-62px -22px}
-a[href="/wnf"]{background-position:-20px -44px}
-a[href="/ttt"]{background-position:-42px -44px}
+a[href="/order"],
+a[href="/energy"],
+a[href="/growth"],
+a[href="/mix"],
+a[href="/decay"],
+a[href="/tbg"],
+a[href="/wild"],
+a[href="/rnb"],
+a[href="/sa"],
+a[href="/wnf"],
+a[href="/ttt"] {
+    width: 20px;
+    height: 20px;
+    content: " ";
+    background-image: url(%%emoti%%);
+    display: inline-block;
+    cursor: default
+}
+.usertext-body a {
+    display: inline-block
+}
+a[href="/order"] {
+    background-position: 0px 0px
+}
+a[href="/energy"] {
+    background-position: -20px 0px
+}
+a[href="/growth"] {
+    background-position: 0px -20px
+}
+a[href="/mix"] {
+    background-position: -20px -20px
+}
+a[href="/decay"] {
+    background-position: -40px -0px
+}
+a[href="/tbg"] {
+    background-position: -62px -0px
+}
+a[href="/wild"] {
+    background-position: -0px -44px
+}
+a[href="/rnb"] {
+    background-position: -40px -22px
+}
+a[href="/sa"] {
+    background-position: -62px -22px
+}
+a[href="/wnf"] {
+    background-position: -20px -44px
+}
+a[href="/ttt"] {
+    background-position: -42px -44px
+}
