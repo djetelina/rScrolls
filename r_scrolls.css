@@ -203,6 +203,7 @@ body:not(.res) .side .fancy-toggle-button {
 .flair-flair-wild, 
 .flair-flair-mojang, 
 .flair-flair-esl, 
+.flair-flair-anosou,
 .flair-flair-ice, 
 .flair-flair-was, 
 .flair-flair-oee  {
@@ -296,6 +297,11 @@ body:not(.res) .side .fancy-toggle-button {
 .flair-flair-mojang  {
     
   background-position:  -24px -48px;
+    
+}
+.flair-flair-anosou  {
+    
+  background-position:  -48px -48px;
     
 }
 /* New Line */
