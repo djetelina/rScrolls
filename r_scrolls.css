@@ -867,10 +867,28 @@ textarea {
 }
 /**emo**/
 .blocks, 
-a[href="/order"],  a[href="/energy"],  a[href="/growth"],  a[href="/mix"],  a[href="/decay"],  a[href="/tbg"],  a[href="/wild"],  a[href="/rnb"],  a[href="/sa"],  a[href="/wnf"],  a[href="/ttt"]
+a[href="/anosou"],
+a[href="/boyz"],
+a[href="/decay"],
+a[href="/energy"],
+a[href="/esl"],
+a[href="/fpa"],
+a[href="/growth"],
+a[href="/ice"],
+a[href="/mix"],
+a[href="/mojang"],
+a[href="/oee"],
+a[href="/order"],
+a[href="/rnb"],
+a[href="/sa"],
+a[href="/tbg"],
+a[href="/ttt"],
+a[href="/wild"],
+a[href="/wnf"],
+a[href="/wns"]
  {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     content: " ";
     background-image: url(%%emoti%%);
     display: inline-block;
@@ -880,36 +898,60 @@ a[href="/order"],  a[href="/energy"],  a[href="/growth"],  a[href="/mix"],  a[hr
 a {
     display: inline-block;
 }
-a[href="/order"] {
+a[href="/anosou"] {
     background-position: 0px 0px;
 }
-a[href="/energy"] {
-    background-position: -20px 0px;
-}
-a[href="/growth"] {
-    background-position:  0px -20px;
-}
-a[href="/mix"] {
-    background-position: -20px -20px;
+a[href="/boyz"] {
+    background-position: 0px -24px;
 }
 a[href="/decay"] {
-    background-position: -40px -0px;
+    background-position: 0px -48px;
 }
-a[href="/tbg"] {
-    background-position: -62px -0px;
+a[href="/energy"] {
+    background-position: 0px -72px;
 }
-a[href="/wild"] {
-    background-position: -0px -44px;
+a[href="/esl"] {
+    background-position: 0px -96px;
+}
+a[href="/fpa"] {
+    background-position: 0px -120px;
+}
+a[href="/growth"] {
+    background-position: 0px -144px;
+}
+a[href="/ice"] {
+    background-position: 0px -168px;
+}
+a[href="/mix"] {
+    background-position: 0px -192px;
+}
+a[href="/mojang"] {
+    background-position: 0px -216px;
+}
+a[href="/oee"] {
+    background-position: 0px -240px;
+}
+a[href="/order"] {
+    background-position: 0px -264px;
 }
 a[href="/rnb"] {
-    background-position: -40px -22px;
+    background-position: 0px -288px;
 }
 a[href="/sa"] {
-    background-position: -62px -22px;
+    background-position: 0px -312px;
 }
-a[href="/wnf"] {
-    background-position: -20px -44px;
+a[href="/tbg"] {
+    background-position: 0px -336px;
 }
 a[href="/ttt"] {
-    background-position: -42px -44px;
+    background-position: 0px -360px;
+}
+a[href="/wild"] {
+    background-position: 0px -384px;
+}
+a[href="/wnf"] {
+    background-position: 0px -408px;
+}
+a[href="/wns"] {
+    background-position: 0px -432px;
 }
