@@ -2,6 +2,19 @@
      color:  black;
  }
 
+/*special additional flair test
+.author[href$="/iScrE4m"]:after{
+  content: "  ";
+  background:  url(%%flairs%%);
+  vertical-align: middle;
+  overflow: hidden;
+  width: 24px;
+  height:  24px;
+  display:  inline-block;
+  background-position:  0px -72px;
+  margin-left:  3px;
+}*/
+
 a[href$="#spoiler"]  {
     transition:  all 0.5s ease;
      background-color:  black;
@@ -13,7 +26,19 @@ a[href$="#spoiler"]  {
 a[href$="#spoiler"]:hover  {
      background-color:  transparent!important;
      color:  #ffa43c!important;
+     cursor:  default;
 }
+a[href$="#spoiler"]::before {
+    background: transparent!important;
+    color: #FFF!important;
+    padding: 0px 1px;
+    margin: 0px;
+    letter-spacing: 1px;
+    margin-right: 1px;
+    text-transform: uppercase;}
+
+a[href$="#spoiler"]::before {
+    content: "Spoiler";}
 
 .wiki-page .pageactions .wikiaction-current, .wiki-page .pageactions .wikiaction:hover, .wiki-page .pageactions .wikiaction-current:hover {
     background-color: #69370D;
