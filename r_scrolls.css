@@ -964,11 +964,11 @@ input[name="uh"] ~ a:after, .user:before {
 
   top: -60px;
 
-  right: 20px;
+  right: 30px;
 
   width: 300px;
 
-  height: 83px;
+  height: 35px;
 
   font-style: italic;
 
@@ -978,7 +978,7 @@ input[name="uh"] ~ a:after, .user:before {
 
   color: #fffff;
 
-  z-index: 0;
+  z-index: 0!important;
 
   display: block;
 
@@ -988,11 +988,23 @@ input[name="uh"] ~ a:after, .user:before {
 
   text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000; }
 
+input[name="uh"] ~ a:after {
+
+  background: url("%%quote-bg%%") center center no-repeat; }
+
+
+
+.user:before {
+
+  z-index: 10!important;
+
+  content: " "; }
+
 
 
 input[name="uh"][value^="a"] ~ a:after {
 
-  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+  content: "Made an awesome play? Send it to /u/NrpTheNinja to qualify for Top 5 plays of the week."; }
 
 input[name="uh"][value^="b"] ~ a:after {
 
