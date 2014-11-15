@@ -955,3 +955,181 @@ a[href="/wnf"] {
 a[href="/wns"] {
     background-position: 0px -432px;
 }
+
+/*Tips*/
+
+input[name="uh"] ~ a:after, .user:before {
+
+  position: absolute;
+
+  top: -60px;
+
+  right: 20px;
+
+  width: 300px;
+
+  height: 83px;
+
+  font-style: italic;
+
+  font-size: 12px;
+
+  font-weight: normal;
+
+  color: #fffff;
+
+  z-index: 0;
+
+  display: block;
+
+  line-height: 15px;
+
+  text-align: center;
+
+  text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000; }
+
+
+
+input[name="uh"][value^="a"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="b"] ~ a:after {
+
+  content: "Check 'Comments of Mojangstas' in sidebar to see the latest reddit comments by Mojang employees."; }
+
+input[name="uh"][value^="c"] ~ a:after {
+
+  content: "Top 5 Scrolls livestreams on Twitch are listed in our sidebar, join the fun!"; }
+
+input[name="uh"][value^="d"] ~ a:after {
+
+  content: "I am hiding face of Sister of The Fox. She doesn't mind though, faces of dying aren't pretty."; }
+
+input[name="uh"][value^="e"] ~ a:after {
+
+  content: "To censor out text in your comments, simply use spoiler tag: [Text](#Spoiler)"; }
+
+input[name="uh"][value^="f"] ~ a:after {
+
+  content: "Don't miss out on custom guild flairs, get your guild master to message our moderators."; }
+
+input[name="uh"][value^="g"] ~ a:after {
+
+  content: "Are you new to Scrolls? Do you want to learn? Check out Scrolls Academy! Link is in our sidebar!"; }
+
+input[name="uh"][value^="h"] ~ a:after {
+
+  content: "Participate in our weekly Scrolls discussion! It should be easily spotted by [WEEKLY] flair."; }
+
+input[name="uh"][value^="i"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="j"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="k"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="l"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="m"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="n"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="o"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="p"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="q"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="r"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="s"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="t"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="u"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="v"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="w"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="x"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="y"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="z"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="1"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="2"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="3"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="4"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="5"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="6"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="7"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="8"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="9"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+
+input[name="uh"][value^="0"] ~ a:after {
+
+  content: "Please message /u/iScrE4m with more tips to be shown here."; }
