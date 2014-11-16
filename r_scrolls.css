@@ -1036,11 +1036,11 @@ input[name="uh"][value^="h"] ~ a:after {
 
 input[name="uh"][value^="i"] ~ a:after {
 
-  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+  content: "Ingame moderators have M in front of their name and special avatar head."; }
 
 input[name="uh"][value^="j"] ~ a:after {
 
-  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+  content: "Remember to report all bugs you encounter to bug tracker. Link is in the sidebar."; }
 
 input[name="uh"][value^="k"] ~ a:after {
 
