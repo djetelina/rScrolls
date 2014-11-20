@@ -109,6 +109,11 @@ html:not([lang="dd"]) .RES-keyNav-activeElement {
 .link .score.dislikes {
     color: #ede7aa;
 }
+
+span.score {
+color: #fff;
+}
+
 .titlebox .redditname {
 }
 
