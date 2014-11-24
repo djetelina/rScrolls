@@ -1009,7 +1009,7 @@ input[name="uh"] ~ a:after {
 
 input[name="uh"][value^="a"] ~ a:after {
 
-  content: "Made an awesome play? Send it to /u/NrpTheNinja to qualify for Top 5 plays of the week."; }
+  content: "Made an awesome play? Send it to /u/NrpTheNinja for Top 5 plays of the week."; }
 
 input[name="uh"][value^="b"] ~ a:after {
 
