@@ -505,6 +505,7 @@ textarea {
 .md h1, .md h2, .md h3 {
     color: #FFA43C;
     padding: 5px;
+    margin: 5px 0px;
 }
 .md h1 {
     font-size: 24px;
