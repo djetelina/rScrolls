@@ -504,8 +504,7 @@ textarea {
 }
 .md h1, .md h2, .md h3 {
     color: #FFA43C;
-    padding: 5px;
-    margin: 5px 0px;
+    padding: 5px 0px;
 }
 .md h1 {
     font-size: 24px;
@@ -1040,7 +1039,7 @@ input[name="uh"][value^="c"] ~ a:after {
 
 input[name="uh"][value^="d"] ~ a:after {
 
-  content: "I am hiding face of Sister of The Fox. She doesn't mind though, faces of dying aren't pretty."; }
+  content: "Search before posting!"; }
 
 input[name="uh"][value^="e"] ~ a:after {
 
@@ -1072,11 +1071,11 @@ input[name="uh"][value^="k"] ~ a:after {
 
 input[name="uh"][value^="l"] ~ a:after {
 
-  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+  content: "If you see a troll, downvote and ignore him!"; }
 
 input[name="uh"][value^="m"] ~ a:after {
 
-  content: "Please message /u/iScrE4m with more tips to be shown here."; }
+  content: "Don't be shy, join us in IRC! More info in the sidebar."; }
 
 input[name="uh"][value^="n"] ~ a:after {
 
